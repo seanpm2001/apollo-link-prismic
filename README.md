@@ -49,3 +49,25 @@ const apolloClient = new ApolloClient({
 	cache: new InMemoryCache(),
 });
 ```
+
+### Installation with React Native
+
+Using `apollo-link-prismic` in React Native applications requires additional setup.
+
+After installing `apollo-link-prismic`, install the following [URL Web API](https://developer.mozilla.org/en-US/docs/Web/API/URL_API) polyfill:
+
+```sh
+npm install react-native-url-polyfill
+```
+
+Next, import the polyfill in your app’s entry file (typically this is App.js or index.js).
+
+```javascript
+// App.js or index.js
+
+import "react-native-url-polyfill/auto";
+```
+
+`apollo-link-prismic` can now be used throughout your app.
+
+**Note**: If the polyfill does not work after importing in your app's entry file, try the alternative ["Flexible" set up method described in `react-native-url-polyfill`'s](https://github.com/charpeni/react-native-url-polyfill#option-2-flexible).
