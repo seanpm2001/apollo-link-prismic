@@ -70,4 +70,4 @@ import "react-native-url-polyfill/auto";
 
 `apollo-link-prismic` can now be used throughout your app.
 
-**Note**: If the polyfill does not work after importing in your app's entry file, try the alternative ["Flexible" set up method described in `react-native-url-polyfill`'s](https://github.com/charpeni/react-native-url-polyfill#option-2-flexible).
+**Note**: If the polyfill does not work after importing in your app's entry file, try the alternative ["Flexible" set up method described in `react-native-url-polyfill`'s documentation](https://github.com/charpeni/react-native-url-polyfill#option-2-flexible).
